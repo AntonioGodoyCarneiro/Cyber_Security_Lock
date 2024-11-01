@@ -1,0 +1,46 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body{
+    margin: 0; /* Remove margens padrão do body */
+    background-image: url(../img/Introdução.png);
+
+    /* overflow: hidden; Remove barras de rolagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+   }
+
+
+   #pag_home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+   }
+   
+.move{
+    width: 500px;
+    height: 500px;
+    /* background-color: tomato; */
+    animation: girar 50s linear infinite;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    @keyframes girar {
+        from {
+            transform: rotate(0deg); /* Início da rotação em torno do eixo Y */
+        }
+        to {
+            transform: rotate(360deg); /* Fim da rotação em torno do eixo Y */
+        }
+    }
+
+    .acess{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
